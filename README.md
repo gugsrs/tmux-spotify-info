@@ -2,6 +2,8 @@
 
 Show current spotify track artist and name on tmux status bar.
 
+![](https://github.com/gugsrs/tmux-spotify-mac/blob/master/screenshot/screenshot.png)
+
 ## Instalation
 ### Using Tmux Plugin Manager
 
