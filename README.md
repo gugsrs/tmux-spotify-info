@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/gugsrs/tmux-spotify-mac.svg?branch=master)](https://travis-ci.org/gugsrs/tmux-spotify-mac)
 # tmux-spotify-mac
 
 Show current spotify track artist and name on tmux status bar. Only for MacOS.
