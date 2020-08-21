@@ -7,6 +7,5 @@ before_install:
 before_script:
   - tmux start-server
   - tmux new-session -s travis -d
-  - tmux list-sessions
 script:
   - bats tests/
