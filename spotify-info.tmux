@@ -5,7 +5,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 spotify_info="#($CURRENT_DIR/scripts/tmux-spotify-info)"
 placeholder="\#{spotify-info}"
 
-source $CURRENT_DIR/scripts/shared.sh
+source $CURRENT_DIR/scripts/utils.sh
 
 do_interpolation() {
 	local string="$1"
