@@ -2,7 +2,11 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-spotify_info="#($CURRENT_DIR/scripts/tmux-spotify-info)"
+if [ "$(uname)" == "Darwin" ]; then
+	spotify_info="#($CURRENT_DIR/scripts/tmux-spotify-info)"
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	spotify_info="#($CURRENT_DIR/scripts/spotify-dbus.sh)"
+fi
 placeholder="\#{spotify-info}"
 
 source $CURRENT_DIR/scripts/utils.sh
